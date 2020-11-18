@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="main">
+        <div class="container">
+    <h1 id="title">Wildlife Survey Form</h1>
+    <p id="description">How well do you know your surrounding wildlife?</p>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" placeholder="Enter Your Name" required="">
+        </div>
+        <div class="form-group">
+            <p>Email</p>
+            <label id="email-label" for="email">
+                <input id="email" type="text" name="email" placeholder="Enter Your Email" required="">
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Age</p>
+            <label id="number-label" for="number">
+                <input id="number" type="number" name="age" min="10" max="99" placeholder="Age" required="">
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Your current ocupation</p>
+            <select id="dropdown" name="role" required="">
+                <option disabled="" selected="" value="">select your current role</option>
+                <option value="student">Student</option>
+                <option value="Business">Business</option>
+                <option value="Government">Government Sector</option>
+                <option value="Private">Private Sector</option>
+                <option value="NoJob">Unemployed</option>
+                <option value="PreferNo">Prefer Not To Say</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you share this Survey with your friend?</p>
+            <label>
+                <input type="radio" class="align-radio" name="user-share" value="Definately" checked="">Definately
+            </label>
+            <label>
+                <input type="radio" class="align-radio" name="user-share" value="Maybe">Maybe
+            </label>
+            <label>
+                <input type="radio" class="align-radio" name="user-share" value="Not sure">Not Sure
+            </label>
+
+        </div>
+        <div class="form-group">
+            <p>How well do you know your surrounding wildlife?</p>
+            <label>
+                <input type="radio" name="know" value="Well" checked="">Well
+            </label>
+            <label>
+                <input type="radio" name="know" value="very">Very Well
+            </label>
+            <label>
+                <input type="radio" name="know" value="not">Do not know
+            </label>
+
+        </div>
+        <div>
+            <p>What would you like to see improved in conservation of wildlife?
+                <span>(Check all that applies)</span>
+            </p>
+            <label>
+                <input type="checkbox" name="thoughts" value="Plantation" checked="">Plantation
+            </label><br>
+            <label>
+                <input type="checkbox" name="thoughts" value="Donate">Donate
+            </label><br>
+            <label>
+                <input type="checkbox" name="thoughts" value="Speak">Speak Up
+            </label><br>
+            <label>
+                <input type="checkbox" name="thoughts" value="Recycle">Recycle
+            </label><br>
+            <label>
+                <input type="checkbox" name="thoughts" value="Buy">Buy Responsively
+            </label><br>
+            <label>
+                <input type="checkbox" name="thoughts" value="volunteer">Volunteer
+            </label><br>
+            <label>
+                <input type="checkbox" name="thoughts" value="Visit">Visit Zoos, aquarium, national parks etc
+            </label><br>
+            <label>
+                <input type="checkbox" name="thoughts" value="Watch">Neighbourhood Watch Program
+            </label>
+
+        </div>
+        <div>
+            <p>Any Comments or suggestions?</p>
+             <textarea class="textarea" name="comment" placeholder="Place your comments here..."></textarea>
+            
+         </div>
+         <button class="submit-button" type="submit">Submit</button>
+
+
+    </form>
+        </div>
+</body>
+</html>
